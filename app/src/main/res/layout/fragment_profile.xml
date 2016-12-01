@@ -1,0 +1,224 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+
+
+>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:src="@drawable/profile_icon4"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:id="@+id/ivImage"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentTop="true"
+                android:focusableInTouchMode="false" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:id="@+id/photo_sec"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/authorized"
+                android:src="@drawable/shield"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone" />
+
+
+
+
+        </RelativeLayout>
+
+        <costumize.ArabTextView
+
+
+            android:textSize="28dip"
+            android:textColor="#d3081417"
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="الصفحة الشخصية"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3a939295"/>
+
+
+        <RelativeLayout
+            android:id="@+id/wait_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="100dp"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/profile_sec"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3a939295"/>
+
+            <costumize.ArabTextView
+
+
+                android:textSize="22dip"
+                android:textColor="@color/myblue"
+                android:padding="3dp"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/prof_name" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3a939295"/>
+
+            <costumize.ArabTextView
+
+
+                android:textSize="18dip"
+                android:textColor="@color/myblue"
+                android:padding="3dp"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/prof_speciality" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3a939295"/>
+
+            <costumize.ArabTextView
+
+
+                android:textSize="18dip"
+                android:textColor="@color/myblue"
+                android:padding="3dp"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/prof_address" />
+
+            <costumize.ArabButton
+                android:id="@+id/place"
+                android:textColor="@color/myred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="16dip"
+
+                android:background="@drawable/bg_button_itemadv2"
+                android:text="موقع العيادة على الخريطة"
+                android:textStyle="bold"
+                android:drawableRight="@android:drawable/ic_menu_myplaces"
+                android:padding="4dp" />
+
+            <costumize.ArabButton
+                android:id="@+id/contact"
+                android:textColor="@color/myred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="16dip"
+
+                android:background="@drawable/bg_button_itemadv2"
+                android:text="اتصال بالطبيب"
+                android:textStyle="bold"
+                android:drawableRight="@android:drawable/sym_call_outgoing"
+                android:padding="4dp" />
+
+            <costumize.ArabButton
+                android:id="@+id/b_contact_info"
+                android:textColor="@color/myred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="16dip"
+
+                android:background="@drawable/bg_button_itemadv2"
+                android:text="معلومات الاتصال"
+                android:textStyle="bold"
+                android:drawableRight="@android:drawable/ic_menu_call"
+                android:padding="4dp" />
+            <costumize.ArabButton
+                android:id="@+id/b_clinic_info"
+                android:textColor="@color/myred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="16dip"
+
+                android:background="@drawable/bg_button_itemadv2"
+                android:text="معلومات العيادة"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:drawableRight="@android:drawable/ic_menu_agenda"
+                android:padding="4dp" />
+
+            <costumize.ArabButton
+                android:id="@+id/advice"
+                android:textColor="@color/myred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dip"
+
+                android:background="@drawable/bg_button_itemadv2"
+                android:text="استعراض النصائح الطبية"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:drawableRight="@android:drawable/ic_menu_send"
+                android:padding="4dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout></ScrollView>

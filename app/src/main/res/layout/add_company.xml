@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20px"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mygray"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinnertype"
+                android:background="@drawable/shape"
+                android:drawSelectorOnTop="true"
+                android:textSize="18dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" />
+
+            <costumize.ArabTextView
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="نوع الشركة : "
+                android:textSize="14dp"
+                android:textColor="@color/myblue"
+                android:gravity="center_vertical|right" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:background="@drawable/shape"
+                android:drawSelectorOnTop="true"
+                android:textSize="18dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" />
+
+            <costumize.ArabTextView
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="اسم الشركة : "
+                android:textSize="14dp"
+                android:textColor="@color/myblue"
+                android:gravity="center_vertical|right" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mygray"
+            android:layout_marginTop="15dp" />
+    </LinearLayout>
+
+</LinearLayout>
+

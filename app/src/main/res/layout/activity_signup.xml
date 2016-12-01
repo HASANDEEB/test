@@ -1,0 +1,231 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical"
+
+
+    android:background="#ffffff">
+
+<ScrollView
+
+
+    android:background="#fff"
+    android:fillViewport="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:src="@drawable/tabebk_logoo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/imageView2"
+                android:layout_marginBottom="34dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <Spinner
+                    android:id="@+id/user_type"
+                    android:background="@drawable/shape"
+                    android:drawSelectorOnTop="true"
+                    android:textSize="15dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:spinnerMode="dropdown"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+
+                <costumize.ArabTextView
+
+
+                    android:textSize="16dp"
+                    android:textColor="@color/myblue"
+                    android:padding="3dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="هل أنت ؟ "
+                    android:layout_weight="2.5"
+                    android:gravity="right"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3a939295"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <costumize.ArabTextView
+                android:padding="3dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="رقم الهاتف"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:textSize="14dip"
+                android:textColor="@color/myblue"/>
+
+            <costumize.ArabEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+
+                android:padding="3dp"
+                android:background="@drawable/shape"
+                android:textColor="#1996d7"
+
+
+                android:hint="09xxxxxxxx"
+                android:inputType="phone"
+                android:gravity="center"
+                android:focusable="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3a939295"/>
+
+            <costumize.ArabTextView
+                android:padding="3dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="ملاحظة : سيتم استخدام هذا الرقم للاتصال بك لاحقاً .  مثال : 0933556677"
+                android:layout_marginTop="5dp"
+                android:textSize="10dip"
+                android:textColor="@color/myred"
+                android:background="@drawable/bg_button_itemadv2"
+                android:gravity="center" />
+
+            <costumize.ArabTextView
+                android:padding="3dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="كلمةالمرور "
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:textSize="14dip"
+                android:textColor="@color/myblue"/>
+
+            <costumize.ArabEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+
+                android:padding="3dp"
+                android:background="@drawable/shape"
+                android:textColor="#1996d7"
+
+
+                android:inputType="textPassword"
+                android:focusable="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3a939295"/>
+
+            <costumize.ArabTextView
+                android:padding="3dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="تأكيد كلمة المرور "
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:textSize="14dip"
+                android:textColor="@color/myblue"/>
+
+            <costumize.ArabEditText
+                android:id="@+id/re_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+
+                android:padding="3dp"
+                android:background="@drawable/shape"
+                android:textColor="#1996d7"
+
+
+                android:focusable="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3a939295"/>
+
+            <costumize.ArabButton
+                android:id="@+id/b_continue"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="18dip"
+
+                android:background="@drawable/bg_button"
+                android:text="انشاء حساب"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <costumize.ArabTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:text="هل تملك حسابا مسبقا؟"
+                android:id="@+id/t1"
+                android:textSize="14dip" />
+
+            <costumize.ArabButton
+                android:id="@+id/b_register"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="تسجيل  الدخول"
+                android:textStyle="bold"
+                android:textColor="#ffff160f" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

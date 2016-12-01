@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical"
+
+
+    android:background="#ffffff">
+<ScrollView
+
+
+    android:background="#fff"
+    android:fillViewport="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="0dp"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="0dp">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+
+        android:background="#ffffff">
+
+
+            <ImageView android:src="@drawable/tabebk_logoo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/imageView3"
+                android:layout_alignParentEnd="false" />
+
+            <costumize.ArabTextView
+
+
+                android:textSize="18dip"
+                android:textColor="@color/myblue"
+                android:padding="3dp"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="ماهي الخدمات التي تقترح إضافتها للتطبيق في الإصدار القادم ؟"
+                android:id="@+id/view"
+                android:layout_below="@+id/imageView3"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3a939295"
+                android:layout_alignBottom="@+id/view"
+                android:layout_alignLeft="@+id/b_vote"
+                android:layout_alignStart="@+id/b_vote" />
+
+            <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/vote_list"
+                    android:choiceMode="multipleChoice"
+                android:footerDividersEnabled="false"
+                android:layout_below="@+id/view"
+                android:layout_above="@+id/b_vote"
+                android:minHeight="300dp"
+                android:layout_marginBottom="70dp" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+    <costumize.ArabButton
+        android:id="@+id/b_vote"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dip"
+
+        android:background="@drawable/bg_button"
+        android:text="تصويت"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>

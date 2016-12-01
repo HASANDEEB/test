@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20px"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="false"
+        android:background="@drawable/item"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="37dp">
+
+                <costumize.ArabTextView
+                    android:id="@+id/a_date"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"
+                    android:textSize="12dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical|left"
+                    android:focusable="false"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/save_img"
+                    android:src="@drawable/ic_menu_save"
+                    android:background="@drawable/bg_button_item"
+                    android:scaleType="fitXY" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3a939295"
+                android:layout_marginTop="1dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <costumize.ArabTextView
+                    android:id="@+id/advice"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/myblue"
+                    android:gravity="right"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <costumize.ArabButton
+                android:id="@+id/delete"
+                android:textColor="@color/myred"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12dip"
+
+                android:text="حذف"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_button_itemadv"
+                android:gravity="center"
+                android:textStyle="normal" />
+
+            <costumize.ArabButton
+                android:id="@+id/edit"
+                android:textColor="#666"
+                android:layout_width="wrap_content"
+
+                android:layout_marginTop="5dp"
+                android:textSize="12dip"
+                 android:layout_height="30dp"
+                android:background="@drawable/bg_button_itemadv2"
+                android:text="تعديل   "
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textStyle="normal" /><![CDATA[
+
+            />
+
+
+            />
+
+
+            ]]>
+
+            <costumize.ArabButton
+                android:id="@+id/save"
+                android:textColor="@color/myred"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12dip"
+
+                android:background="@drawable/bg_button_itemadv"
+                android:text="حفظ"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:textStyle="normal" />
+            <![CDATA[
+
+            />
+
+        ]]>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

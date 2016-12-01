@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".edit"
+    android:background="@color/myblue">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <costumize.ArabTextView
+            android:id="@+id/labelcourses"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:text="نتائج البحث"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <costumize.ArabTextView
+        android:layout_below="@id/labelcourses"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/statuso"
+        android:text="يرجى الانتظار.."
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_tab"
+        android:layout_marginBottom="5dp">
+
+        <costumize.ArabTextView
+            android:layout_below="@id/labelcourses"
+            android:layout_centerInParent="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/search_page"
+            android:textColor="#fff"
+            android:layout_weight="1" />
+
+        <costumize.ArabTextView
+            android:layout_below="@id/labelcourses"
+            android:layout_centerInParent="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/search_num"
+            android:textColor="#fff"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/search_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/myblue"
+        android:visibility="gone">
+        <costumize.ArabTextView
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:text="لا يوجد نتائج لعرضها"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/searchs">
+
+        <com.apps.scit.tabibihon.SlidingTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:elevation="2dp"
+            android:background="#fff"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"></android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</LinearLayout>

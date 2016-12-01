@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:descendantFocusability="beforeDescendants">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background_selector"
+        android:padding="10dp"
+        android:id="@+id/advice_item"
+        android:layout_margin="2dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="afterDescendants"
+            android:weightSum="1"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="5dp">
+
+            <costumize.ArabTextView
+                android:id="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#333" />
+
+            <costumize.ArabTextView
+                android:id="@+id/line3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#444" />
+
+            <costumize.ArabTextView
+                android:id="@+id/line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/mydarkgray" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <costumize.ArabButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/shareFacebookButton"
+                    android:text="مشاركة"
+                    android:layout_gravity="left"
+                    android:textAppearance="@style/TextAppearance.Design.Hint"
+                    android:background="@drawable/card_background2"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/myred" />
+
+                <costumize.ArabButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="اعجاب"
+                    android:id="@+id/lile_btn"
+                    android:textColor="#333"
+                    android:background="@drawable/card_background"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="2dp"
+                    android:textAppearance="@style/TextAppearance.Design.Hint"
+                    android:layout_marginLeft="5dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/doc_img"
+                android:layout_gravity="right"
+                android:src="@drawable/profile_icon2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/likes"
+                android:layout_marginTop="5dp" />
+
+            <costumize.ArabTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.Design.Hint"
+                android:textColor="@color/mydarkgray"
+                android:text="اعجاب" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

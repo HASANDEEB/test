@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20px"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mygray"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <costumize.myNumberPicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hfrom"
+                        max="11"
+                        />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:text=":"
+                        android:id="@+id/textView3"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textSize="30dp" />
+
+                    <costumize.myNumberPicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mfrom"
+                        max="59"
+
+                        />
+
+                    <costumize.myNumberPicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sshift"
+                        max="1"
+
+                        android:layout_marginLeft="3dp" />
+
+
+                </LinearLayout>
+
+                <costumize.ArabTextView
+                    android:padding="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="من"
+                    android:textSize="14dp"
+                    android:textColor="@color/myblue"
+                    android:gravity="center_vertical|right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <costumize.myNumberPicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hto"
+                        max="11"
+                        />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:text=":"
+                        android:id="@+id/textView4"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textSize="30dp" />
+
+                    <costumize.myNumberPicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mto"
+                        max="59"
+                        />
+
+                    <costumize.myNumberPicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/eshift"
+                        max="1"
+
+                        android:layout_marginLeft="3dp" />
+
+                </LinearLayout>
+
+                <costumize.ArabTextView
+                    android:padding="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الى"
+                    android:textSize="14dp"
+                    android:textColor="@color/myblue"
+                    android:gravity="center_vertical|right" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mygray"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <Spinner
+                android:id="@+id/spinner_shift"
+                android:background="@drawable/shape"
+                android:drawSelectorOnTop="true"
+                android:textSize="18dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:entries="@array/times_shift"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <costumize.ArabTextView
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="التوقيت"
+                android:textSize="14dp"
+                android:textColor="@color/myblue"
+                android:textAlignment="center"
+                android:gravity="center_vertical|right"
+                android:layout_weight="2.5" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mygray"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+</ScrollView>
+

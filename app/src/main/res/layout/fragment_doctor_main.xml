@@ -1,0 +1,471 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+
+    android:background="#ffffff"
+    android:paddingTop="10dp">
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/lll">
+
+                <costumize.ArabTextView
+                    android:textSize="20dip"
+                    android:textColor="@color/myblue"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" أهلاً وسهلا بك "
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/myblue"/>
+
+                <costumize.ArabTextView
+
+
+                    android:textSize="14dip"
+                    android:textColor="@color/myblue"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/welcom" />
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/l2"
+                        android:background="@drawable/icon_button">
+
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:id="@+id/search_but"
+                            android:src="@drawable/search"
+                            android:layout_gravity="center_horizontal"
+                            android:scaleType="fitXY"
+                            android:padding="2dp" />
+
+                        <costumize.ArabTextView
+                            android:textSize="13dp"
+                            android:textColor="#0a9d02"
+                            android:gravity="center"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:text="بــحــث"
+
+                            android:layout_marginTop="4dp"
+                            android:paddingLeft="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/l3"
+                        android:background="@drawable/icon_button">
+
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:id="@+id/profile_but"
+                            android:layout_gravity="center_horizontal" />
+
+                        <costumize.ArabTextView
+                            android:textSize="13dp"
+                            android:textColor="#ef4e3c"
+                            android:gravity="center"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:text="الملف الشخصي"
+                            android:layout_marginTop="4dp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/icon_button">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/icon_button"
+                        android:id="@+id/l6">
+
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:id="@+id/adv_but"
+                            android:src="@drawable/adv_icon"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:padding="2dp" />
+
+                        <costumize.ArabTextView
+                            android:textSize="14dp"
+                            android:textColor="@color/myred"
+                            android:gravity="center"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:text="النصائح"
+
+                            android:layout_marginTop="4dp"
+                            />
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/icon_button">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/l4"
+                        android:focusableInTouchMode="false"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:id="@+id/hos_but"
+                            android:src="@drawable/hospitals"
+                            android:layout_gravity="center_horizontal" />
+
+                        <costumize.ArabTextView
+                            android:textSize="14dp"
+                            android:textColor="#ff0493ff"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:text="المشافي"
+                            android:layout_marginTop="4dp"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/l1"
+                        android:focusableInTouchMode="false"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:id="@+id/chim_but"
+                            android:src="@drawable/phar"
+                            android:layout_gravity="center_horizontal" />
+
+                        <costumize.ArabTextView
+                            android:textSize="14dp"
+                            android:textColor="#d7721f"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:text="الصيدليات المناوبة"
+                            android:layout_marginTop="4dp"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <costumize.ArabButton
+                    android:id="@+id/prof_but"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_button"
+                    android:textColor="#ffffff"
+                    android:text="عرض الملف الشخصي"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <costumize.ArabButton
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_button"
+                    android:textColor="#ffffff"
+                    android:text="ابحث عن طبيب"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <costumize.ArabTextView
+                    android:textSize="14dip"
+                    android:textColor="#ff49627d"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="سيتم إضافة ميزات جديدة الى التطبيق ساهم معنا في اختيار هذه الميزات"
+                    android:layout_marginTop="4dp" />
+
+                <costumize.ArabButton
+                    android:id="@+id/vote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_button"
+                    android:textColor="#ffffff"
+                    android:text="تصويت"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp" />
+
+
+                <costumize.ArabTextView
+                    android:textSize="14dip"
+                    android:textColor="#ff49627d"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:text="قم بدعوة أصدقائك لاستخدام تطبيق طبيبك هون والاستفادة من خدماته المجانية "
+                    android:layout_marginTop="4dp"
+                    android:padding="3dp" />
+
+                <costumize.ArabButton
+                    android:id="@+id/invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_button"
+                    android:textColor="#ffffff"
+                    android:text="دعوة صديق"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp" />
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/myred"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <costumize.ArabTextView
+                        android:textSize="10dp"
+                        android:textColor="@color/myblue"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="الفيسبوك"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/fbtxt"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center|center_horizontal" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/facebook"
+                        android:src="@drawable/fb"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                    <costumize.ArabTextView
+                        android:textSize="10dp"
+                        android:textColor="#ffe5942c"
+                        android:gravity="center|center_horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="شركة الساحل"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/scittxt"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.1" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/scit"
+                        android:src="@drawable/scit"
+                        android:layout_gravity="center_horizontal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <costumize.ArabTextView
+                        android:textSize="10dp"
+                        android:textColor="@color/myred"
+                        android:gravity="center|center_horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="نقابة الأطباء"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/nacabatxt"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.1" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/nacabab"
+                        android:src="@drawable/nakaba"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <costumize.ArabTextView
+                        android:textSize="10dp"
+                        android:textColor="#fc049f00"
+                        android:gravity="center|center_horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="نقابة الصيادلة"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/nacabaphtxt"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.1" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/nacababph"
+                        android:src="@drawable/pharmacy_ak"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <costumize.ArabTextView
+                        android:textSize="10dp"
+                        android:textColor="@color/myblue"
+                        android:gravity="center|center_horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" طبيبك هون"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/webtxt"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.1" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/website"
+                        android:src="@drawable/web"
+                        android:layout_gravity="center_horizontal" />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+

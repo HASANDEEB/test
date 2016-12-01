@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/myblue"
+    tools:context="info.androidhive.materialdesign.activity.HomeFragment">
+    <costumize.ArabTextView
+        android:id="@+id/labelcourses"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:text="النصائح"
+        android:textStyle="bold"/>
+
+    <costumize.ArabTextView
+        android:layout_below="@id/labelcourses"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/statuso"
+        android:text="يرجى الانتظار.."
+        android:textColor="#fff" />
+    <RelativeLayout
+        android:id="@+id/loadingPanel_stats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#f0f0f0">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="#f0f0f0">
+
+        <costumize.ArabTextView
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textColor="@color/myblue"
+            android:text="لا يوجد نصائح لعرضها"
+            android:textStyle="bold"
+            android:id="@+id/progressBar" />
+
+
+
+        <costumize.ArabButton
+            android:id="@+id/advice_add2"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dip"
+
+            android:background="@drawable/bg_button_blue"
+            android:text="اضافة نصيحة "
+            android:textStyle="bold"
+            android:layout_below="@+id/progressBar"
+            android:layout_alignLeft="@+id/progressBar"
+            android:layout_alignStart="@+id/progressBar"
+            android:layout_alignRight="@+id/progressBar"
+            android:layout_alignEnd="@+id/progressBar"
+            android:visibility="gone"
+            android:gravity="center_horizontal" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0">
+
+        <costumize.ArabButton
+            android:id="@+id/advice_add"
+            android:textColor="@color/myred"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+
+            android:background="@drawable/bg_button_itemadv"
+            android:text="اضافة نصيحة "
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/advice_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:drawSelectorOnTop="true"
+            android:gravity="center"
+
+            android:verticalSpacing="5dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/advice_add" />
+    </RelativeLayout></LinearLayout>

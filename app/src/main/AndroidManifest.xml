@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apps.scit.tabibihon" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE" />
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <permission
+        android:name="com.apps.scit.tabibihon.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.apps.scit.tabibihon.permission.C2D_MESSAGE" />
+
+    <permission
+        android:name="com.apps.scit.tabibihon.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.apps.scit.tabibihon.permission.MAPS_RECEIVE" />
+
+
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:alwaysRetainTaskState="true"
+
+        >
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+        <provider android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider191424077942501"
+            android:exported="true"/>
+
+        <activity
+            android:name=".facebookRegisteration"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Hospitals"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".HospitalMap"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".AdviceActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".search"
+            android:label="Language"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ChooseLocation"
+            android:label="Language"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".profile"
+            android:label="Language"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Welcome"
+            android:label="Language"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".userType"
+            android:label="Language"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".doctorRegisterSubInfo"
+            android:label="Language"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Speciality"
+            android:label="Language"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".splash"
+            android:label="@string/title_activity_splash"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+       
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDu1M_r7dMzpuE5viSiKsNs-8Zwr_OE-0c" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".searchResults"
+            android:label="@string/title_activity_results_actvity"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Voting"
+            android:label="@string/title_activity_voting"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+        android:name=".signup"
+        android:label="@string/title_activity_voting"
+
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+    </activity>
+        <activity
+
+            android:name=".login"
+            android:label="@string/title_activity_voting"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name=".doctorRegisterInfo"
+            android:label="@string/title_activity_voting"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".clinicRegisteration"
+            android:label="@string/title_activity_voting"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".doctorRegisterAccount"
+            android:label="@string/title_activity_voting"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".clinic_service_info"
+            android:label="@string/title_activity_voting"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".userRegisterAccount"
+            android:label="@string/title_activity_voting"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".my_profile"
+            android:label="@string/title_activity_voting"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".edit"
+            android:label="@string/title_activity_voting"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".doctorAdvice"
+            android:label="@string/title_activity_voting"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".userDoctorList"
+            android:label="@string/title_activity_voting"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".userAdvices"
+            android:label="@string/title_activity_voting"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".doctorContacts"
+            android:label="@string/title_activity_voting"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".notificationResults"
+            android:label="@string/title_activity_voting"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".adminNotification"
+            android:label="@string/title_activity_voting"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".doctorClinic"
+            android:label="@string/title_activity_voting"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".searchMapsActivity"
+            android:label="@string/title_activity_voting"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name=".chemistary"
+            android:label="@string/title_activity_voting"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+             android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".doctorAdminNotification"
+            android:label="@string/title_activity_voting"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.apps.scit.tabibihon.cancel" />
+                <category android:name="com.apps.scit.tabibihon"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".GCMPushReceiverService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:name=".GCMRegistrationIntentService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+
+
+
+
+
+    </application>
+
+</manifest>

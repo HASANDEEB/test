@@ -1,0 +1,64 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="#ffffff"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+
+
+>
+    <ImageView android:src="@drawable/tabebk_logoo"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginBottom="34dp"
+        android:layout_gravity="center_horizontal" />
+
+    <costumize.ArabTextView
+
+
+        android:textSize="22dip"
+        android:textColor="#44a4b9"
+        android:padding="3dp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="حدد موقع العيادة على الخريطة"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3a939295"/>
+    <costumize.ArabButton
+        android:id="@+id/p_pick"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18dip"
+
+        android:background="@drawable/bg_button"
+        android:text="حدد موقع العيادة على الخريطة"
+        android:textStyle="bold" />
+
+    <costumize.ArabButton
+        android:id="@+id/b_continue"
+android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18dip"
+
+        android:background="@drawable/bg_button"
+        android:text="متابعة"
+        android:textStyle="bold" />
+
+
+
+
+</LinearLayout>

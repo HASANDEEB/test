@@ -1,0 +1,82 @@
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    >
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+
+
+>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView android:src="@drawable/tabebk_logoo"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:layout_marginBottom="34dp"
+            android:layout_gravity="center_horizontal" />
+
+        <costumize.ArabTextView
+
+
+            android:textSize="22dip"
+            android:textColor="@color/myblue"
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="اختصاصك ؟"
+            />
+
+        <Spinner
+            android:id="@+id/ageSpinner"
+            android:background="@drawable/shape"
+            android:drawSelectorOnTop="true"
+            android:textSize="18dip"
+            android:layout_marginBottom="4dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:spinnerMode="dialog"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:minHeight="40dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mygray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+
+        <costumize.ArabButton
+            android:id="@+id/b_continue"
+    android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18dip"
+
+        android:background="@drawable/bg_button"
+        android:text="متابعة"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

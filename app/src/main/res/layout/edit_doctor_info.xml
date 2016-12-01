@@ -1,0 +1,318 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+
+
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <costumize.ArabTextView
+            android:padding="3dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="الاسم الاول"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textSize="14dip"
+            android:textColor="@color/myblue"/>
+
+        <costumize.ArabEditText
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+
+
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:textColor="#1996d7"
+
+            android:inputType="text"
+            android:focusable="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3a939295"/>
+
+        <costumize.ArabTextView
+            android:padding="3dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="الاسم الاوسط"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textSize="14dip"
+            android:textColor="@color/myblue"/>
+
+        <costumize.ArabEditText
+            android:id="@+id/mname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:textColor="#1996d7"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3a939295"/>
+
+        <costumize.ArabTextView
+            android:padding="3dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="الاسم الاخير"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textSize="14dip"
+            android:textColor="@color/myblue"/>
+
+        <costumize.ArabEditText
+            android:id="@+id/lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:textColor="#1996d7"
+
+            android:inputType="text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3a939295"/>
+
+        <costumize.ArabTextView
+            android:padding="3dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="الجامعة"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textSize="14dip"
+            android:textColor="@color/myblue"/>
+
+        <costumize.ArabEditText
+            android:id="@+id/university"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:textColor="#1996d7"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3a939295"/>
+
+        <costumize.ArabTextView
+            android:padding="3dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="معلومات اضافية"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textSize="14dip"
+            android:textColor="@color/myblue"/>
+
+        <costumize.ArabEditText
+            android:id="@+id/additional_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:textColor="#1996d7"
+
+
+            android:inputType="textMultiLine" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3a939295"/>
+
+        <costumize.ArabTextView
+            android:padding="3dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="الايميل"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textSize="14dip"
+            android:textColor="@color/myblue"/>
+
+        <costumize.ArabEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:textColor="#1996d7"
+
+
+            android:inputType="textEmailAddress" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3a939295"/>
+
+        <costumize.ArabTextView
+            android:padding="3dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="الهاتف الارضي"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textSize="14dip"
+            android:textColor="@color/myblue"/>
+
+        <costumize.ArabEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:textColor="#1996d7"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3a939295"/>
+
+        <costumize.ArabTextView
+            android:padding="3dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="الموبايل"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textSize="14dip"
+            android:textColor="@color/myblue"/>
+
+        <costumize.ArabEditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:textColor="#1996d7"
+
+
+            android:inputType="phone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3a939295"/>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/speciality">
+
+            <costumize.ArabTextView
+                android:padding="3dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="الاختصاص"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:textSize="14dip"
+                android:textColor="@color/myblue"/>
+
+            <Spinner
+                android:id="@+id/doc_spec"
+                android:background="@drawable/shape"
+                android:drawSelectorOnTop="true"
+                android:textSize="18dip"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+
+                android:spinnerMode="dialog"
+                android:layout_marginBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3a939295" />
+        </LinearLayout>
+
+
+        <costumize.ArabButton
+            android:id="@+id/doc_edit"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18dip"
+
+            android:background="@drawable/bg_button"
+            android:text="تعديل"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+
+
+</LinearLayout></ScrollView>

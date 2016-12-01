@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="mydarkgray">#ff757576</color>
+    <color name="mygray">#9d9d9e</color>
+    <color name="mylightgray">#d8d8d9</color>
+    <color name="myoldblue">#5d9aff</color>
+    <color name="myblue">#214fa5</color>
+    <color name="myoldred">#ff160f</color>
+    <color name="mylightred">#44ffb5b4</color>
+    <color name="myred">#de2127</color>
+    <color name="ColorPrimary">#e62117</color>
+    <color name="ColorPrimaryDark">#c31c13</color>
+    <color name="tabsScrollColor">#ff160f</color>
+    <color name="white">#fff</color>
+</resources>

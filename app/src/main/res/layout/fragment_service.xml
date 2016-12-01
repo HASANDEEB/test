@@ -1,0 +1,119 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="#fffafff3"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="#ffffff"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+>
+    <ImageView android:src="@drawable/tabebk_logoo"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_marginBottom="34dp"
+        android:layout_gravity="center_horizontal" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3a939295"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3a939295"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3a939295"/>
+    <costumize.ArabTextView
+
+
+        android:textSize="20dip"
+        android:textColor="@color/myblue"
+        android:padding="3dp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="الخدمات المقدمة من العيادة :  ؟"
+        />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3a939295"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginTop="8dp"
+        android:id="@+id/doc_spec"
+        android:visibility="gone">
+
+
+        <costumize.ArabRadioButton
+            android:id="@+id/saturday"
+            android:gravity="right"
+            android:textSize="20dip"
+            android:textColor="#a95d9aff"
+            android:padding="3dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+
+            android:text="إيكو"
+            />
+        <costumize.ArabRadioButton
+            android:id="@+id/sunday"
+            android:gravity="right"
+            android:textSize="20dip"
+            android:textColor="#a95d9aff"
+            android:padding="3dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="أشعة"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/service_list"
+        android:layout_gravity="center_horizontal"
+        android:choiceMode="multipleChoice" />
+
+    <costumize.ArabButton
+        android:id="@+id/b_continue"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18dip"
+
+        android:background="@drawable/bg_button"
+        android:text="متابعة"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp" />
+
+
+
+
+</LinearLayout></ScrollView>

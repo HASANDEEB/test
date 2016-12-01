@@ -1,0 +1,74 @@
+<resources>
+
+    <string-array name="array_name">
+        <item>عظمية</item>
+        <item>قلبية</item>
+        <item>أطفال</item>
+    </string-array>
+    <string-array name="regions">
+        <item>منطقة 1</item>
+        <item>منطقة 2</item>
+        <item>منطقة 3</item>
+        <item>منطقة 4</item>
+        <item>منطقة 5</item>
+
+    </string-array>
+    <string-array name="cities">
+        <item>حمص</item>
+        <item>دمشق</item>
+        <item>حلب</item>
+        <item>طرطوس</item>
+        <item>اللاذقية</item>
+        <item>السويداء</item>
+    </string-array>
+    <string name="app_name">طبيبك هون</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_index">Index</string>
+    <string name="title_activity_splash">طبيبك هون</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_results_actvity">resultsActvity</string>
+    <string name="title_activity_voting">Voting</string>
+    <string name="error_field_required">من فضلك هذا الحقل مطلوب</string>
+    <string name="error">مشكلة في الشبكة</string>
+    <string name="fail">خطأ  في جلب البيانات</string>
+    <string name="fail_login">الرجاء التحقق من معلومات الحساب المدخلة</string>
+    <string name="v_weak">كلمة السر ضعيفة جدا</string>
+    <string name="weak">كلمة السر ضعيفة</string>
+    <string name="mid">كلمة السر متوسطة القوة</string>
+    <string name="strong">كلمة السر قوية</string>
+    <string name="v_strong">كلمة السر قوية جداً</string>
+    <string name="invailed_phone"> من فضلك ادخل رقم هاتف صحيح</string>
+    <string name="invailed_loc"> لم يتم تحديد موقع من قبل الطبيب</string>
+    <string name="auth">   تم التوثق من الهوية </string>
+    <string name="upload_fail">حصل خطأ في عملية رفع الصورة </string>
+    <string name="gcm_fail">حصل خطأ في عملية التسجيل لخدمة الحصول على الاشعارات</string>
+    <string name="confirm_exit">اضغط زر الرجوع مجدداً لإغلاق التطبيق</string>
+    <string name="facebook_app_id_old">594130110760975</string>
+    <string name="facebook_app_id">191424077942501</string>
+
+
+
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="ok">OK</string>
+    <string name="hello_user">Hello %1$s!</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Post ID: %1$s</string>
+
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="you_picked">You picked:</string>
+    <string name="no_friends_selected">&lt;No friends selected&gt;</string>
+    <string name="no_place_selected">&lt;No place selected&gt;</string>
+    <string name="pick_seattle_place">Pick a Seattle Place</string>
+    <string name="app_id">355198514515820</string>
+    <string name="fb_login_protocol_scheme">fb355198514515820</string>
+    <string name="exception">Exception: %1$s</string>
+
+</resources>

@@ -1,0 +1,102 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+
+
+    android:background="#ffffff">
+
+
+    <costumize.ArabButton
+        android:id="@+id/hospital_add"
+        android:textColor="@color/myred"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dip"
+
+        android:background="@drawable/bg_button_itemadv"
+        android:text="اضافة مشفى"
+        android:textStyle="bold"
+        android:layout_marginBottom="2dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:weightSum="1">
+
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/res">
+
+            <costumize.ArabTextView
+                android:padding="1dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="اضغط على أي عنصر من القائمة لحذفه"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:textSize="12dip"
+                android:textColor="@color/myred"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listView"
+                android:choiceMode="singleChoice"
+                android:layoutMode="opticalBounds" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3a939295"
+                android:layout_marginTop="1dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/no_res">
+
+
+            <costumize.ArabTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textColor="@color/myblue"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:text="لم يتم اضافة اي مشفى"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout></LinearLayout>

@@ -1,0 +1,117 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView android:src="@drawable/tabebk_logoo"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="34dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/mygray"/>
+
+                <costumize.ArabTextView
+
+
+                    android:textSize="20dip"
+                    android:textColor="@color/myblue"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="أهلاً بك في تطبيق طبيبك هون , من باقة البرامج الطبية المقدمة من شركة الساحل البرمجية . سيقوم هذا الدليل بإرشادك لتهيئة التطبيق لأول مرة"
+                    android:id="@+id/w_title" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/mygray"/>
+
+                <costumize.ArabButton
+                    android:id="@+id/b_continue"
+            android:textColor="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18dip"
+
+                    android:background="@drawable/bg_button"
+                    android:text="متابعة"
+                    android:textStyle="bold" />
+
+                <costumize.ArabTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:text="هل تملك حسابا مسبقا؟"
+                    android:id="@+id/t1"
+                    android:textSize="14dip" />
+
+                <costumize.ArabButton
+                    android:id="@+id/b_register"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="تسجيل  الدخول"
+                    android:textStyle="bold"
+                    android:textColor="#ffff160f" />
+
+
+
+                <costumize.ArabTextView android:text="التسجيل عبر فيسبوك"
+
+                    android:id="@+id/btnLogin"
+                    android:padding="5dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_button_blue"
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp" />
+
+                <com.facebook.login.widget.LoginButton
+                    android:visibility="gone"
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

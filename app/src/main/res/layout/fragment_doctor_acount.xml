@@ -1,0 +1,163 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView android:src="@drawable/tabebk_logoo"
+            android:layout_width="fill_parent"
+            android:layout_height="107dp"
+            android:layout_marginBottom="34dp"
+            android:layout_gravity="center_horizontal" />
+
+        <costumize.ArabTextView
+
+
+            android:textSize="20dip"
+            android:textColor="@color/myblue"
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="معلومات الحساب"
+            />
+
+        <costumize.ArabTextView
+            android:padding="3dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="رقم الهاتف"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textSize="16dip"
+            android:textColor="@color/myblue"/>
+
+        <costumize.ArabEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:textColor="#1996d7"
+            android:gravity="center"
+            android:inputType="phone"
+            android:hint="09xxxxxxxx"
+            android:focusable="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3a939295"/>
+        <costumize.ArabTextView
+            android:padding="3dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="ملاحظة : سيتم استخدام هذا الرقم للاتصال بك لاحقاً .  مثال : 0933556677"
+            android:layout_marginTop="5dp"
+            android:textSize="12dip"
+            android:textColor="@color/myred"
+            android:background="@drawable/bg_button_itemadv2"
+            android:gravity="center" />
+
+        <costumize.ArabTextView
+            android:padding="3dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="كلمة المرور"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textSize="16dip"
+            android:textColor="@color/myblue"/>
+
+        <costumize.ArabEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:textColor="#1996d7"
+
+
+            android:inputType="textPassword" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3a939295"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginTop="8dp"
+            android:id="@+id/doc_spec"
+            android:visibility="gone">
+
+
+            <costumize.ArabRadioButton
+                android:id="@+id/saturday"
+                android:gravity="right"
+                android:textSize="20dip"
+                android:textColor="#a95d9aff"
+                android:padding="3dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+
+                android:text="إيكو"
+                />
+            <costumize.ArabRadioButton
+                android:id="@+id/sunday"
+                android:gravity="right"
+                android:textSize="20dip"
+                android:textColor="#a95d9aff"
+                android:padding="3dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="أشعة"
+                />
+
+        </LinearLayout>
+
+        <costumize.ArabButton
+            android:id="@+id/b_continue"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18dip"
+
+            android:background="@drawable/bg_button"
+            android:text="متابعة"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+
+
+</LinearLayout></ScrollView>

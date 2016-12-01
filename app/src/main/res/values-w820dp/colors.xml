@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blueSystem">#44a4b9</color>
+    <color name="textCol">#ff3f3243</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#4d76b6</color>
+    <color name="redDegree">#dd2126</color>
+</resources>

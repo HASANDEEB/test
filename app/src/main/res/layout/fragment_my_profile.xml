@@ -1,0 +1,496 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ffffff"
+    android:orientation="vertical"
+
+
+>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <ImageView android:src="@drawable/profile_icon4"
+                android:layout_width="match_parent"
+              android:layout_height="300px"
+                android:id="@+id/ivImage"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentTop="true"
+                android:visibility="visible"
+                android:paddingBottom="10dp" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:id="@+id/photo_sec"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/authorized"
+                android:src="@drawable/shield"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:background="#00ff0d68"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_grad"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:id="@+id/statistic"
+            android:visibility="gone">
+
+            <costumize.ArabTextView
+
+
+                android:textSize="10dip"
+                android:textColor="#d3081417"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="عدد الزيارات"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#5affffff"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:id="@+id/visits"
+                android:layout_weight="2" />
+
+            <costumize.ArabTextView
+
+
+                android:textSize="10dip"
+                android:textColor="#d3081417"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="انت الان في مفضلة 0 شخص"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#5affffff"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:id="@+id/favorites"
+                android:layout_weight="1"
+                android:gravity="right" />
+
+
+        </LinearLayout>
+
+        <costumize.ArabButton
+            android:id="@+id/photo_upload"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dip"
+
+            android:background="@drawable/bg_button"
+            android:text="اختيار صورة شخصية"
+            android:textStyle="bold"
+            android:drawableRight="@android:drawable/ic_menu_camera"
+            android:padding="4dp" />
+
+        <costumize.ArabTextView
+
+
+            android:textSize="28dip"
+            android:textColor="#d3081417"
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="الصفحة الشخصية"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3a939295"/>
+
+        <RelativeLayout
+            android:id="@+id/wait_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="100dp"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/profile_sec"
+            android:visibility="gone">
+
+            <costumize.ArabTextView
+
+
+                android:textSize="22dip"
+                android:textColor="@color/myblue"
+                android:padding="3dp"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/prof_name" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3a939295"/>
+
+            <costumize.ArabTextView
+
+
+                android:textSize="18dip"
+                android:textColor="@color/myblue"
+                android:padding="3dp"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/prof_speciality" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3a939295"/>
+
+            <costumize.ArabTextView
+
+
+                android:textSize="18dip"
+                android:textColor="@color/myblue"
+                android:padding="3dp"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/prof_address" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3a939295"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_itemadv3"
+                    android:layout_marginTop="14dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <costumize.ArabTextView
+
+
+                        android:textSize="13dip"
+                        android:textColor="@color/myred"
+                        android:padding="3dp"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/clinic_state"
+                        android:text="غير متواجد حاليا"
+                        android:layout_weight="1" />
+
+                    <costumize.ArabSwitch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switch1"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:textSize="14dip"
+                        android:checked="false" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <costumize.ArabButton
+                android:id="@+id/place"
+                android:textColor="@color/myred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="14dip"
+
+                android:background="@drawable/bg_button_itemadv2"
+                android:text=" موقع العيادة على الخريطة"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:drawableRight="@android:drawable/ic_menu_myplaces"
+                android:padding="4dp" />
+
+            <costumize.ArabButton
+                android:id="@+id/advice"
+                android:textColor="@color/myred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+
+                android:background="@drawable/bg_button_itemadv2"
+                android:text="شارك بنصيحة طبية"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:drawableRight="@android:drawable/ic_menu_add"
+                android:padding="4dp" />
+
+
+            <costumize.ArabButton
+                android:id="@+id/invite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_button_itemadv2"
+                android:textColor="@color/myred"
+                android:text="دعوة صديق"
+                android:textStyle="bold"
+                android:drawableRight="@android:drawable/ic_menu_share"
+                android:layout_marginBottom="16dp"
+                android:textSize="14dip" />
+            <costumize.ArabButton
+                android:id="@+id/admin_notif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_button_itemadv2"
+                android:textColor="@color/myred"
+                android:text="إشعارات الإدارة"
+                android:textStyle="bold"
+                android:drawableRight="@android:drawable/ic_menu_info_details"
+                android:layout_marginBottom="16dp"
+                android:textSize="14dip" />
+
+            <costumize.ArabButton
+                android:id="@+id/doctor_advice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_button_itemadv2"
+                android:textColor="@color/myred"
+                android:text="استعراض النصائح الطبية"
+                android:textStyle="bold"
+                android:drawableRight="@android:drawable/ic_menu_set_as"
+                android:layout_marginBottom="16dp"
+                android:textSize="14dip" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/myred"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <costumize.ArabTextView
+                android:textSize="10dp"
+                android:textColor="@color/myblue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="الفيسبوك"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/fbtxt"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center|center_horizontal" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/facebook"
+                android:src="@drawable/fb"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <costumize.ArabTextView
+                android:textSize="10dp"
+                android:textColor="#ffe5942c"
+                android:gravity="center|center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="شركة الساحل"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/scittxt"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.1" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/scit"
+                android:src="@drawable/scit"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <costumize.ArabTextView
+                android:textSize="10dp"
+                android:textColor="@color/myred"
+                android:gravity="center|center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="نقابة الأطباء"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/nacabatxt"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.1" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/nacabab"
+                android:src="@drawable/nakaba"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <costumize.ArabTextView
+                android:textSize="10dp"
+                android:textColor="#fc049f00"
+                android:gravity="center|center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="نقابة الصيادلة"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/nacabaphtxt"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.1" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/nacababph"
+                android:src="@drawable/pharmacy_ak"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <costumize.ArabTextView
+                android:textSize="10dp"
+                android:textColor="@color/myblue"
+                android:gravity="center|center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=" طبيبك هون"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/webtxt"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.1" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/website"
+                android:src="@drawable/web"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout></ScrollView>

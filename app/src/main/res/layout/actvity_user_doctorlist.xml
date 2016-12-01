@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/myblue"
+    tools:context="info.androidhive.materialdesign.activity.HomeFragment">
+    <costumize.ArabTextView
+        android:id="@+id/labelcourses"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:text="مفضلة الاطباء"
+        android:textStyle="bold"/>
+
+    <costumize.ArabTextView
+        android:layout_below="@id/labelcourses"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/statuso"
+        android:text="يرجى الانتظار.."
+        android:textColor="#fff" />
+    <RelativeLayout
+        android:id="@+id/loadingPanel_stats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#f0f0f0">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="#f0f0f0">
+
+        <costumize.ArabTextView
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textColor="@color/myblue"
+            android:text="لا يوجد اطباء لعرضهم"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0">
+
+        <ListView
+            android:id="@+id/doctor_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:drawSelectorOnTop="true"
+            android:gravity="center"
+
+            android:verticalSpacing="5dp"
+            android:focusable="true"
+            android:clickable="true"/>
+    </RelativeLayout></LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <costumize.ArabCheckedTextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textAlignment="center"
+        android:padding="2dp"
+         android:textColor="@color/mydarkgray"
+        style="?android:attr/spinnerDropDownItemStyle"
+        android:singleLine="true"
+
+
+    android:textSize="15dp"
+    android:gravity="center"
+    android:checked="false" />
+
+
+

@@ -1,0 +1,89 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:padding="5dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3a939295"
+        android:id="@+id/view11"
+        android:layout_below="@+id/clinic_city"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp" />
+
+    <costumize.ArabTextView
+
+
+        android:textSize="20dip"
+        android:textColor="@color/myblue"
+        android:padding="3dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="المشافي"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/view12"
+        android:layout_centerHorizontal="true" />
+
+    <costumize.ArabTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="المدينة"
+        android:textSize="14dip"
+        android:textColor="@color/myblue"
+        android:paddingRight="8dp"
+        android:gravity="right"
+        android:layout_below="@+id/view12"
+        android:layout_alignLeft="@+id/clinic_city"
+        android:layout_alignStart="@+id/clinic_city"
+        android:id="@+id/view13"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <costumize.ArabTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="لا يوجد معلومات لعرضها"
+        android:textSize="18dp"
+        android:textColor="@color/myblue"
+        android:paddingRight="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/noresult"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/view11"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/clinic_city"
+        android:background="@drawable/shape"
+        android:drawSelectorOnTop="true"
+        android:textSize="18dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:spinnerMode="dialog"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:minHeight="40dp"
+        android:layout_below="@+id/view13"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hospitals"
+        android:headerDividersEnabled="false"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/view11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp" />
+
+</RelativeLayout>

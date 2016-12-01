@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20px"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_background_selector">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_background2">
+
+
+            <costumize.ArabTextView
+                android:id="@+id/da"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mydarkgray"
+                android:textSize="13dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:padding="2dp"
+                android:layout_marginLeft="5dp" />
+
+            <costumize.ArabTextView
+                android:id="@+id/ph"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textColor="@color/myred"
+                android:textSize="14dp"
+                android:textAlignment="center"
+                android:padding="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textIsSelectable="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loc"
+                android:src="@android:drawable/ic_menu_compass"
+                android:scaleType="fitCenter"
+                android:background="@drawable/card_background_selector" />
+
+            <costumize.ArabTextView
+                android:id="@+id/disc"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textColor="#555"
+                android:textSize="12dp"
+                android:textAlignment="center"
+                android:gravity="right"
+                android:padding="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <costumize.ArabTextView
+                android:id="@+id/e_time"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mydarkgray"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:padding="2dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1" />
+
+            <costumize.ArabTextView
+                android:id="@+id/s_time"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mydarkgray"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:padding="2dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1" />
+
+            <costumize.ArabTextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mydarkgray"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:padding="2dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
